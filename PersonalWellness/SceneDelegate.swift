@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  PersonalWellness
 //
-//  Created by Victoria Lei on 4/21/22.
+//  Michelle Yun and Victoria Lei
 //
 
 import UIKit

@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */; };
 		FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */; };
-		FE5073642811BADE00D9F0A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073632811BADE00D9F0A0 /* ViewController.swift */; };
 		FE5073672811BADE00D9F0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5073652811BADE00D9F0A0 /* Main.storyboard */; };
 		FE5073692811BAE000D9F0A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5073682811BAE000D9F0A0 /* Assets.xcassets */; };
 		FE50736C2811BAE000D9F0A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE50736A2811BAE000D9F0A0 /* LaunchScreen.storyboard */; };
+		FE5073742811D4BB00D9F0A0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073732811D4BB00D9F0A0 /* MenuViewController.swift */; };
+		FE5073762813322000D9F0A0 /* MoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073752813321F00D9F0A0 /* MoodViewController.swift */; };
+		FE5073782813322C00D9F0A0 /* HabitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073772813322C00D9F0A0 /* HabitViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE50735C2811BADE00D9F0A0 /* PersonalWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE5073632811BADE00D9F0A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE5073662811BADE00D9F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE5073682811BAE000D9F0A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE50736B2811BAE000D9F0A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE50736D2811BAE000D9F0A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5073732811D4BB00D9F0A0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FE5073752813321F00D9F0A0 /* MoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodViewController.swift; sourceTree = "<group>"; };
+		FE5073772813322C00D9F0A0 /* HabitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */,
 				FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */,
-				FE5073632811BADE00D9F0A0 /* ViewController.swift */,
+				FE5073732811D4BB00D9F0A0 /* MenuViewController.swift */,
+				FE5073752813321F00D9F0A0 /* MoodViewController.swift */,
+				FE5073772813322C00D9F0A0 /* HabitViewController.swift */,
 				FE5073652811BADE00D9F0A0 /* Main.storyboard */,
 				FE5073682811BAE000D9F0A0 /* Assets.xcassets */,
 				FE50736A2811BAE000D9F0A0 /* LaunchScreen.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE5073642811BADE00D9F0A0 /* ViewController.swift in Sources */,
 				FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */,
+				FE5073762813322000D9F0A0 /* MoodViewController.swift in Sources */,
+				FE5073782813322C00D9F0A0 /* HabitViewController.swift in Sources */,
+				FE5073742811D4BB00D9F0A0 /* MenuViewController.swift in Sources */,
 				FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
