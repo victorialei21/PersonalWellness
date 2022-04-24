@@ -9,78 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Menu View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" alpha="0.94999999999999996" contentMode="scaleToFill" id="1dm-i8-gJW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floral" translatesAutoresizingMaskIntoConstraints="NO" id="s4m-t6-HP2">
-                                <rect key="frame" x="0.0" y="52" width="414" height="793"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xg8-Jg-WlM">
-                                <rect key="frame" x="167" y="451" width="80" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="tintColor" systemColor="linkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Archive" imagePadding="8">
-                                    <imageReference key="image" image="folder" catalog="system" symbolScale="large"/>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od7-wg-Kyc">
-                                <rect key="frame" x="90" y="296" width="80" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="tintColor" systemColor="linkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system" imagePlacement="top" title="Habits" imagePadding="8">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="didHabitPopUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PY1-Gt-NSd"/>
-                                    <segue destination="u8y-dY-0Vx" kind="show" identifier="chooseHabitSegue" id="LGM-P2-25B"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-HY-nUs">
-                                <rect key="frame" x="244" y="296" width="80" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <color key="tintColor" systemColor="linkColor"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Mood" imagePadding="8">
-                                    <imageReference key="image" image="face.smiling" catalog="system" symbolScale="large"/>
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
-                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="kQw-5c-Mbl" kind="show" identifier="chooseMoodSegue" id="lPw-mB-Hbk"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today is April 24, 2022" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
-                                <rect key="frame" x="19" y="104" width="276" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZRU-Ye-6ay"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="agh-or-Igd"/>
-                    <connections>
-                        <outlet property="dateText" destination="DDz-yT-QhJ" id="j9Y-x5-ZDN"/>
-                        <outlet property="habitPopUp" destination="Od7-wg-Kyc" id="vNN-jf-kC0"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="93.75"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3h7-pm-JvO">
             <objects>
@@ -92,12 +20,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jpu-yX-EWa"/>
+                        <segue destination="C3k-1t-xmM" kind="relationship" relationship="rootViewController" id="NCL-98-efQ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdV-TB-b05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="93.75"/>
+            <point key="canvasLocation" x="-1575" y="94"/>
         </scene>
         <!--Mood View Controller-->
         <scene sceneID="KGX-AF-r2F">
@@ -157,7 +85,98 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMK-ov-Bx7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708.6956521739132" y="-290.625"/>
+            <point key="canvasLocation" x="732" y="-467"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="yCr-oS-01Z">
+            <objects>
+                <viewController id="sUJ-dd-mpN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jyv-XB-4Os">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lx5-Fq-ZwI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="tray.2.fill" catalog="system" id="SxQ-L9-QNt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bg6-pc-ER6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="414"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="0XD-Ig-CJh">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n37-z6-XLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="DHW-hy-EcX" customClass="MenuViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9G4-5U-Xj4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floral" translatesAutoresizingMaskIntoConstraints="NO" id="s4m-t6-HP2">
+                                <rect key="frame" x="0.0" y="57" width="414" height="740"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Od7-wg-Kyc">
+                                <rect key="frame" x="83" y="296" width="80" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="star.fill" catalog="system" imagePlacement="top" title="Habits" imagePadding="8">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="u8y-dY-0Vx" kind="show" identifier="chooseHabitSegue" id="LGM-P2-25B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSd-HY-nUs">
+                                <rect key="frame" x="237" y="296" width="80" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <color key="tintColor" systemColor="linkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" imagePlacement="top" title="Mood" imagePadding="8">
+                                    <imageReference key="image" image="face.smiling" catalog="system" symbolScale="large"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="16"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="kQw-5c-Mbl" kind="show" identifier="chooseMoodSegue" id="lPw-mB-Hbk"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today is April 24, 2022" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
+                                <rect key="frame" x="20" y="118" width="276" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EC1-0h-yo8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="person.fill" catalog="system" id="4gW-my-eFv"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-39.130434782608695" y="-231.02678571428569"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="zv1-Ge-EqN">
+            <objects>
+                <tabBarController id="C3k-1t-xmM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IKo-aZ-6oT"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eC0-AS-ijT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DHW-hy-EcX" kind="relationship" relationship="viewControllers" id="mq5-m1-NRm"/>
+                        <segue destination="sUJ-dd-mpN" kind="relationship" relationship="viewControllers" id="cut-k1-nKn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qoU-Yu-Gi2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-810" y="94"/>
         </scene>
         <!--Habit View Controller-->
         <scene sceneID="reW-tY-Nf1">
@@ -233,17 +252,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rcs-mJ-JLi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1708.6956521739132" y="413.83928571428572"/>
+            <point key="canvasLocation" x="732" y="186"/>
         </scene>
     </scenes>
     <resources>
         <image name="face.smiling" catalog="system" width="128" height="121"/>
         <image name="floral" width="564" height="1002"/>
-        <image name="folder" catalog="system" width="128" height="97"/>
         <image name="happy" width="100" height="90"/>
         <image name="neutral" width="100" height="88"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="sad" width="100" height="92"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="tray.2.fill" catalog="system" width="128" height="114"/>
         <image name="workout" width="100" height="100"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
