@@ -9,21 +9,53 @@ import UIKit
 
 class HabitViewController: UIViewController {
 
+    @IBOutlet weak var skincareButton:UIButton!
+    @IBOutlet weak var sleepButton:UIButton!
+    @IBOutlet weak var waterButton:UIButton!
+    @IBOutlet weak var workoutButton:UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        skincareButton.backgroundColor = UIColor.clear
+        sleepButton.backgroundColor = UIColor.clear
+        waterButton.backgroundColor = UIColor.clear
+        workoutButton.backgroundColor = UIColor.clear
 
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func skincareButtonClicked(_ sender: UIButton) {
+        if skincareButton.backgroundColor == UIColor.clear {
+            skincareButton.backgroundColor = UIColor.lightGray
+            }
+            else if skincareButton.backgroundColor == UIColor.lightGray {
+                skincareButton.backgroundColor = UIColor.clear
+            }
     }
-    */
-
+    
+    
+    @IBAction func sleepButtonClicked(_ sender: UIButton) {
+        if sleepButton.backgroundColor == UIColor.clear {
+                sleepButton.backgroundColor = UIColor.lightGray
+            }
+            else if sleepButton.backgroundColor == UIColor.lightGray {
+                sleepButton.backgroundColor = UIColor.clear
+            }
+    }
+    @IBAction func waterButtonClicked(_ sender: UIButton) {
+        if waterButton.backgroundColor == UIColor.clear {
+                waterButton.backgroundColor = UIColor.lightGray
+            }
+            else if waterButton.backgroundColor == UIColor.lightGray {
+                waterButton.backgroundColor = UIColor.clear
+            }
+    }
+    @IBAction func workoutButtonClicked(_ sender: Any) {
+        if workoutButton.backgroundColor == UIColor.clear {
+                workoutButton.backgroundColor = UIColor.lightGray
+            }
+            else if workoutButton.backgroundColor == UIColor.lightGray {
+                workoutButton.backgroundColor = UIColor.clear
+            }
+    }
 }

@@ -10,16 +10,16 @@ import UIKit
 class MenuViewController: UIViewController {
 
     @IBOutlet weak var habitPopUp: UIView!
+    @IBOutlet weak var dateText: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        habitPopUp.isHidden = true
         
     }//viewDidLoad
     
 
     @IBAction func didHabitPopUp(_ sender: UIButton) {
-        habitPopUp.isHidden = false
+        
     }
     /*
     // MARK: - Navigation
