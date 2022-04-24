@@ -19,8 +19,8 @@ class MenuViewController: UIViewController {
         
         // display date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = " dd/MM/yyyy"
-        dateText.text = dateFormatter.string(from: todayDate)
+        dateFormatter.dateFormat = " MM/dd/yyyy"
+        dateText.text = "Today is " +  dateFormatter.string(from: todayDate)
         
         
     }//viewDidLoad

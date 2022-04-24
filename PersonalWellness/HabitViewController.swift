@@ -2,7 +2,7 @@
 //  HabitViewController.swift
 //  PersonalWellness
 //
-//  Created by Victoria Lei on 4/22/22.
+//  Michelle Yun and Victoria Lei
 //
 
 import UIKit
@@ -21,8 +21,7 @@ class HabitViewController: UIViewController {
         waterButton.backgroundColor = UIColor.clear
         workoutButton.backgroundColor = UIColor.clear
 
-        // Do any additional setup after loading the view.
-    }
+    }//viewDidLoad
     
     @IBAction func skincareButtonClicked(_ sender: UIButton) {
         if skincareButton.backgroundColor == UIColor.clear {
@@ -31,7 +30,7 @@ class HabitViewController: UIViewController {
             else if skincareButton.backgroundColor == UIColor.lightGray {
                 skincareButton.backgroundColor = UIColor.clear
             }
-    }
+    }//skincareButtonClicked
     
     
     @IBAction func sleepButtonClicked(_ sender: UIButton) {
@@ -41,7 +40,8 @@ class HabitViewController: UIViewController {
             else if sleepButton.backgroundColor == UIColor.lightGray {
                 sleepButton.backgroundColor = UIColor.clear
             }
-    }
+    }//sleepButtonClicked
+    
     @IBAction func waterButtonClicked(_ sender: UIButton) {
         if waterButton.backgroundColor == UIColor.clear {
                 waterButton.backgroundColor = UIColor.lightGray
@@ -49,7 +49,8 @@ class HabitViewController: UIViewController {
             else if waterButton.backgroundColor == UIColor.lightGray {
                 waterButton.backgroundColor = UIColor.clear
             }
-    }
+    }//waterButtonClicked
+    
     @IBAction func workoutButtonClicked(_ sender: Any) {
         if workoutButton.backgroundColor == UIColor.clear {
                 workoutButton.backgroundColor = UIColor.lightGray
@@ -57,5 +58,6 @@ class HabitViewController: UIViewController {
             else if workoutButton.backgroundColor == UIColor.lightGray {
                 workoutButton.backgroundColor = UIColor.clear
             }
-    }
-}
+    }//workoutButtonClicked
+    
+}//HabitViewController

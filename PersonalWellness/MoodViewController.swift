@@ -2,28 +2,57 @@
 //  MoodViewController.swift
 //  PersonalWellness
 //
-//  Created by Victoria Lei on 4/22/22.
+//  Michelle Yun and Victoria Lei
 //
 
 import UIKit
 
 class MoodViewController: UIViewController {
 
+    @IBOutlet weak var sadButton: UIButton!
+    @IBOutlet weak var neutralButton: UIButton!
+    @IBOutlet weak var happyButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+        sadButton.backgroundColor = UIColor.clear
+        neutralButton.backgroundColor = UIColor.clear
+        happyButton.backgroundColor = UIColor.clear
+        
+    }//viewDidLoad
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+    @IBAction func sadbutonClicked(_ sender: UIButton) {
+        if sadButton.backgroundColor == UIColor.clear {
+            sadButton.backgroundColor = UIColor.lightGray
+            neutralButton.backgroundColor = UIColor.clear
+            happyButton.backgroundColor = UIColor.clear
+        } else {
+            sadButton.backgroundColor = UIColor.clear
+        }
+    }//sadbuttonClicked
+    
+    @IBAction func neutralbutonClicked(_ sender: UIButton) {
+        if neutralButton.backgroundColor == UIColor.clear {
+            sadButton.backgroundColor = UIColor.clear
+            neutralButton.backgroundColor = UIColor.lightGray
+            happyButton.backgroundColor = UIColor.clear
+        } else {
+            neutralButton.backgroundColor = UIColor.clear
+        }
+    }//neutralbuttonClicked
+    
+    @IBAction func happybuttonClicked(_ sender: UIButton) {
+        if happyButton.backgroundColor == UIColor.clear {
+            sadButton.backgroundColor = UIColor.clear
+            neutralButton.backgroundColor = UIColor.clear
+            happyButton.backgroundColor = UIColor.lightGray
+        } else {
+            happyButton.backgroundColor = UIColor.clear
+        }
+    }//happyButtonClicked
+    
+    @IBAction func save(_ sender: UIButton) {
+        
+    }//save
+}//MoodViewController
