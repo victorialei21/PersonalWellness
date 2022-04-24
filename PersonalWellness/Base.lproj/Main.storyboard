@@ -87,7 +87,7 @@
             </objects>
             <point key="canvasLocation" x="732" y="-467"/>
         </scene>
-        <!--Item 2-->
+        <!--Archives-->
         <scene sceneID="yCr-oS-01Z">
             <objects>
                 <viewController id="sUJ-dd-mpN" sceneMemberID="viewController">
@@ -97,13 +97,13 @@
                         <viewLayoutGuide key="safeArea" id="lx5-Fq-ZwI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" selectedImage="tray.2.fill" catalog="system" id="SxQ-L9-QNt"/>
+                    <tabBarItem key="tabBarItem" title="Archives" selectedImage="tray.2.fill" catalog="system" id="SxQ-L9-QNt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg6-pc-ER6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39" y="414"/>
         </scene>
-        <!--Item 1-->
+        <!--Today-->
         <scene sceneID="0XD-Ig-CJh">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n37-z6-XLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -154,7 +154,11 @@
                         <viewLayoutGuide key="safeArea" id="EC1-0h-yo8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" selectedImage="person.fill" catalog="system" id="4gW-my-eFv"/>
+                    <tabBarItem key="tabBarItem" title="Today" selectedImage="person.fill" catalog="system" id="4gW-my-eFv"/>
+                    <connections>
+                        <outlet property="dateText" destination="DDz-yT-QhJ" id="8S2-nF-rdl"/>
+                        <outlet property="habitPopUp" destination="Od7-wg-Kyc" id="qDt-EV-zyd"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-39.130434782608695" y="-231.02678571428569"/>

@@ -11,16 +11,20 @@ class MenuViewController: UIViewController {
 
     @IBOutlet weak var habitPopUp: UIView!
     @IBOutlet weak var dateText: UITextField!
+    var todayDate = Date()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        dateText.isUserInteractionEnabled = false
+        
+        // display date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = " dd/MM/yyyy"
+        dateText.text = dateFormatter.string(from: todayDate)
+        
         
     }//viewDidLoad
     
-
-    @IBAction func didHabitPopUp(_ sender: UIButton) {
-        
-    }
     /*
     // MARK: - Navigation
 
