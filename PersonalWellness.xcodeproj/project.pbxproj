@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7EFF4D09C7DA19442BD8EA8 /* Pods_PersonalWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */; };
 		FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */; };
 		FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */; };
 		FE5073672811BADE00D9F0A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE5073652811BADE00D9F0A0 /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.release.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.release.xcconfig"; sourceTree = "<group>"; };
+		C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.debug.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.debug.xcconfig"; sourceTree = "<group>"; };
+		F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalWellness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE50735C2811BADE00D9F0A0 /* PersonalWellness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalWellness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7EFF4D09C7DA19442BD8EA8 /* Pods_PersonalWellness.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		211CC33BE0C861C2421EE9F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F26B1E167F49242C0EFE150 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */,
+				2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FE5073532811BADE00D9F0A0 = {
 			isa = PBXGroup;
 			children = (
 				FE50735E2811BADE00D9F0A0 /* PersonalWellness */,
 				FE50735D2811BADE00D9F0A0 /* Products */,
+				6F26B1E167F49242C0EFE150 /* Pods */,
+				211CC33BE0C861C2421EE9F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FE5073702811BAE000D9F0A0 /* Build configuration list for PBXNativeTarget "PersonalWellness" */;
 			buildPhases = (
+				24DE81B7954C9C0DB77DA3F1 /* [CP] Check Pods Manifest.lock */,
 				FE5073582811BADE00D9F0A0 /* Sources */,
 				FE5073592811BADE00D9F0A0 /* Frameworks */,
 				FE50735A2811BADE00D9F0A0 /* Resources */,
+				D98E548C6E21C23A29E23096 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24DE81B7954C9C0DB77DA3F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PersonalWellness-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D98E548C6E21C23A29E23096 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FE5073582811BADE00D9F0A0 /* Sources */ = {
@@ -297,6 +366,7 @@
 		};
 		FE5073712811BAE000D9F0A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +395,7 @@
 		};
 		FE5073722811BAE000D9F0A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
