@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TQR-3M-sfb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C3k-1t-xmM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -20,19 +20,19 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="C3k-1t-xmM" kind="relationship" relationship="rootViewController" id="NCL-98-efQ"/>
+                        <segue destination="C3k-1t-xmM" kind="presentation" id="SFQ-UD-HPa"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdV-TB-b05" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1575" y="94"/>
+            <point key="canvasLocation" x="-1662" y="94"/>
         </scene>
-        <!--Mood View Controller-->
+        <!--Back-->
         <scene sceneID="KGX-AF-r2F">
             <objects>
                 <viewController id="kQw-5c-Mbl" customClass="MoodViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pw4-PD-frj">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPO-sK-Zu8">
@@ -43,7 +43,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="sadbutonClicked:" destination="kQw-5c-Mbl" eventType="touchUpInside" id="lsC-E6-boj"/>
+                                    <action selector="sadbuttonClicked:" destination="kQw-5c-Mbl" eventType="touchUpInside" id="Kuq-th-9G7"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ3-r9-P6h">
@@ -54,7 +54,7 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17" scale="large"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="neutralbutonClicked:" destination="kQw-5c-Mbl" eventType="touchUpInside" id="rzY-dR-nvL"/>
+                                    <action selector="neutralbuttonClicked:" destination="kQw-5c-Mbl" eventType="touchUpInside" id="TNX-ZE-EaZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AOL-IG-P5E">
@@ -84,7 +84,7 @@
                         <viewLayoutGuide key="safeArea" id="5B8-ek-QX9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="RwH-of-XJp"/>
+                    <navigationItem key="navigationItem" title="Back" id="yRv-P7-HWc"/>
                     <connections>
                         <outlet property="happyButton" destination="AOL-IG-P5E" id="1Ka-mv-alu"/>
                         <outlet property="neutralButton" destination="vJ3-r9-P6h" id="9hv-t1-SrM"/>
@@ -99,9 +99,9 @@
         <!--Archives-->
         <scene sceneID="yCr-oS-01Z">
             <objects>
-                <viewController id="sUJ-dd-mpN" sceneMemberID="viewController">
+                <viewController id="sUJ-dd-mpN" customClass="ArchiveViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jyv-XB-4Os">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lx5-Fq-ZwI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -117,14 +117,14 @@
             <objects>
                 <viewController id="DHW-hy-EcX" customClass="MenuViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9G4-5U-Xj4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="floral" translatesAutoresizingMaskIntoConstraints="NO" id="s4m-t6-HP2">
-                                <rect key="frame" x="-21" y="-19" width="457" height="804"/>
+                                <rect key="frame" x="-21" y="-97" width="457" height="804"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Today is 04/24/2022" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Today is 04/24/2022" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
                                 <rect key="frame" x="69" y="134" width="276" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -164,6 +164,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" selectedImage="person.fill" catalog="system" id="4gW-my-eFv"/>
+                    <navigationItem key="navigationItem" id="bnD-81-Up1"/>
                     <connections>
                         <outlet property="dateText" destination="DDz-yT-QhJ" id="8S2-nF-rdl"/>
                         <outlet property="habitPopUp" destination="Od7-wg-Kyc" id="qDt-EV-zyd"/>
@@ -173,10 +174,10 @@
             </objects>
             <point key="canvasLocation" x="-39.130434782608695" y="-231.02678571428569"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Ar-->
         <scene sceneID="zv1-Ge-EqN">
             <objects>
-                <tabBarController id="C3k-1t-xmM" sceneMemberID="viewController">
+                <tabBarController id="C3k-1t-xmM" customClass="Ar" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="IKo-aZ-6oT"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eC0-AS-ijT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -192,12 +193,12 @@
             </objects>
             <point key="canvasLocation" x="-810" y="94"/>
         </scene>
-        <!--Habit View Controller-->
+        <!--Back-->
         <scene sceneID="reW-tY-Nf1">
             <objects>
                 <viewController id="u8y-dY-0Vx" customClass="HabitViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rkz-u9-opV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hax-qn-PUQ">
@@ -210,7 +211,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="skincareButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="Bs7-vC-aIt"/>
+                                    <action selector="skincareButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="ERG-ht-UHN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytr-Z5-eHS">
@@ -223,7 +224,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="sleepButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="yyQ-5g-dkV"/>
+                                    <action selector="sleepButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="NKS-GT-flk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9aL-mE-Kx4">
@@ -236,7 +237,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="waterButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="QQ6-yc-QEi"/>
+                                    <action selector="waterButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="yui-k9-XWe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0BL-Tl-IpK">
@@ -249,7 +250,7 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="workoutButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="tQS-fY-vce"/>
+                                    <action selector="workoutButtonClicked:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="q2J-Tl-Oae"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcM-NU-KUD">
@@ -262,13 +263,14 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="save:" destination="kQw-5c-Mbl" eventType="touchUpInside" id="FiL-fX-pmP"/>
+                                    <action selector="save:" destination="u8y-dY-0Vx" eventType="touchUpInside" id="HFP-mJ-vEj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fRv-X5-fUh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VPX-yg-7Fl"/>
+                    <navigationItem key="navigationItem" title="Back" id="txY-4j-KUk"/>
                     <connections>
                         <outlet property="skincareButton" destination="Hax-qn-PUQ" id="zRW-Ev-kUF"/>
                         <outlet property="sleepButton" destination="ytr-Z5-eHS" id="FXz-Di-VIx"/>

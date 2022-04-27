@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class MenuViewController: UIViewController {
 
@@ -19,10 +20,9 @@ class MenuViewController: UIViewController {
         
         // display date
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = " MM/dd/yyyy"
+        dateFormatter.dateFormat = " MM.dd.yyyy"
         dateText.text = "Today is " +  dateFormatter.string(from: todayDate)
-        
-        
+
     }//viewDidLoad
     
     /*
@@ -35,4 +35,5 @@ class MenuViewController: UIViewController {
     }
     */
 
-}
+} // MenuViewController
+

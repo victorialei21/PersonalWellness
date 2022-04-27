@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CF15F2819105000BD08DA /* ArchiveViewController.swift */; };
 		E7EFF4D09C7DA19442BD8EA8 /* Pods_PersonalWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */; };
 		FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */; };
 		FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		189CF15F2819105000BD08DA /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
 		2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.release.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.release.xcconfig"; sourceTree = "<group>"; };
 		C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.debug.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.debug.xcconfig"; sourceTree = "<group>"; };
 		F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalWellness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +64,6 @@
 				C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */,
 				2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -93,6 +94,7 @@
 				FE5073752813321F00D9F0A0 /* MoodViewController.swift */,
 				FE5073772813322C00D9F0A0 /* HabitViewController.swift */,
 				FE5073652811BADE00D9F0A0 /* Main.storyboard */,
+				189CF15F2819105000BD08DA /* ArchiveViewController.swift */,
 				FE5073792815C1A800D9F0A0 /* GoogleService-Info.plist */,
 				FE5073682811BAE000D9F0A0 /* Assets.xcassets */,
 				FE50736A2811BAE000D9F0A0 /* LaunchScreen.storyboard */,
@@ -221,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */,
+				189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */,
 				FE5073762813322000D9F0A0 /* MoodViewController.swift in Sources */,
 				FE5073782813322C00D9F0A0 /* HabitViewController.swift in Sources */,
 				FE5073742811D4BB00D9F0A0 /* MenuViewController.swift in Sources */,
