@@ -103,14 +103,101 @@
                     <view key="view" contentMode="scaleToFill" id="jyv-XB-4Os">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Z7D-rd-bqw">
+                                <rect key="frame" x="20" y="49" width="374" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="149" id="1Xo-9D-iEo" customClass="FeedCellTableViewCell" customModule="PersonalWellness" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Xo-9D-iEo" id="W1C-4y-WDI">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="149"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Date: 04.27.2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnv-KB-Psj">
+                                                    <rect key="frame" x="20" y="11" width="451" height="20.5"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="date"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJI-VE-JA1">
+                                                    <rect key="frame" x="20" y="41" width="49" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Habits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYK-4d-gsn">
+                                                    <rect key="frame" x="20" y="69" width="56" height="25"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="happy" translatesAutoresizingMaskIntoConstraints="NO" id="VVp-UT-f3t">
+                                                    <rect key="frame" x="77" y="37" width="29" height="28"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="skincare" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-wa-IYb">
+                                                    <rect key="frame" x="77" y="66" width="29" height="28"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sleep" translatesAutoresizingMaskIntoConstraints="NO" id="5BZ-b9-TgK">
+                                                    <rect key="frame" x="107" y="66" width="29" height="28"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="water" translatesAutoresizingMaskIntoConstraints="NO" id="Ird-fc-Vnp">
+                                                    <rect key="frame" x="173" y="66" width="28" height="28"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="workout" translatesAutoresizingMaskIntoConstraints="NO" id="aSW-47-l4D">
+                                                    <rect key="frame" x="138" y="66" width="34" height="28"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ird-fc-Vnp" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="66" id="0JP-0e-vKX"/>
+                                                <constraint firstItem="qJI-VE-JA1" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="20" symbolic="YES" id="0hx-Rs-RIy"/>
+                                                <constraint firstItem="aSW-47-l4D" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="66" id="2QI-B7-rtA"/>
+                                                <constraint firstItem="5BZ-b9-TgK" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="66" id="9lq-rD-mzU"/>
+                                                <constraint firstItem="Ird-fc-Vnp" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="173" id="JgO-lt-UG5"/>
+                                                <constraint firstItem="TYK-4d-gsn" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="20" symbolic="YES" id="L7Y-mm-o5U"/>
+                                                <constraint firstItem="Gnv-KB-Psj" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="20" symbolic="YES" id="LjJ-5J-jOZ"/>
+                                                <constraint firstItem="aSW-47-l4D" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="102" id="Lpf-rk-9a5"/>
+                                                <constraint firstItem="qJI-VE-JA1" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="41" id="ObU-z4-qV7"/>
+                                                <constraint firstItem="VVp-UT-f3t" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="77" id="Xzx-UM-fNl"/>
+                                                <constraint firstItem="UXc-wa-IYb" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="77" id="dEs-vU-BYu"/>
+                                                <constraint firstItem="5BZ-b9-TgK" firstAttribute="leading" secondItem="W1C-4y-WDI" secondAttribute="leading" constant="107" id="ktI-bo-HRl"/>
+                                                <constraint firstItem="VVp-UT-f3t" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="37" id="nhR-PB-zXc"/>
+                                                <constraint firstItem="UXc-wa-IYb" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="66" id="rF8-T6-utb"/>
+                                                <constraint firstItem="Gnv-KB-Psj" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="11" id="vut-KO-kza"/>
+                                                <constraint firstItem="TYK-4d-gsn" firstAttribute="top" secondItem="W1C-4y-WDI" secondAttribute="top" constant="69" id="wSb-dg-hge"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="date" destination="Gnv-KB-Psj" id="bpH-Jk-ddn"/>
+                                            <outlet property="mood" destination="VVp-UT-f3t" id="IbB-FY-dpX"/>
+                                            <outlet property="skincare" destination="UXc-wa-IYb" id="Fuf-XI-oCz"/>
+                                            <outlet property="sleep" destination="5BZ-b9-TgK" id="faW-ha-p6A"/>
+                                            <outlet property="water" destination="Ird-fc-Vnp" id="YQs-EE-WSH"/>
+                                            <outlet property="workout" destination="aSW-47-l4D" id="kDp-EL-Gtg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="lx5-Fq-ZwI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Z7D-rd-bqw" firstAttribute="top" secondItem="lx5-Fq-ZwI" secondAttribute="top" constant="49" id="WeL-AL-Bvy"/>
+                            <constraint firstItem="Z7D-rd-bqw" firstAttribute="leading" secondItem="jyv-XB-4Os" secondAttribute="leadingMargin" id="aDd-oM-vMJ"/>
+                            <constraint firstItem="Z7D-rd-bqw" firstAttribute="trailing" secondItem="jyv-XB-4Os" secondAttribute="trailingMargin" id="hwU-HE-67T"/>
+                            <constraint firstItem="lx5-Fq-ZwI" firstAttribute="bottom" secondItem="Z7D-rd-bqw" secondAttribute="bottom" constant="44" id="mE5-IP-vVY"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Archives" selectedImage="tray.2.fill" catalog="system" id="SxQ-L9-QNt"/>
+                    <connections>
+                        <outlet property="tableView" destination="Z7D-rd-bqw" id="EBd-lI-Hbq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg6-pc-ER6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="414"/>
+            <point key="canvasLocation" x="-39.130434782608695" y="413.83928571428572"/>
         </scene>
         <!--Today-->
         <scene sceneID="0XD-Ig-CJh">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CF15F2819105000BD08DA /* ArchiveViewController.swift */; };
+		189CF167281921DE00BD08DA /* FeedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CF166281921DD00BD08DA /* FeedCellTableViewCell.swift */; };
 		E7EFF4D09C7DA19442BD8EA8 /* Pods_PersonalWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */; };
 		FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */; };
 		FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		189CF15F2819105000BD08DA /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		189CF166281921DD00BD08DA /* FeedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedCellTableViewCell.swift; path = "/Users/apple/Desktop/COSC-253 APP/PersonalWellness/PersonalWellness/FeedCellTableViewCell.swift"; sourceTree = "<absolute>"; };
 		2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.release.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.release.xcconfig"; sourceTree = "<group>"; };
 		C9ADF46F4315318350CF4E3D /* Pods-PersonalWellness.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.debug.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.debug.xcconfig"; sourceTree = "<group>"; };
 		F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalWellness.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +90,7 @@
 		FE50735E2811BADE00D9F0A0 /* PersonalWellness */ = {
 			isa = PBXGroup;
 			children = (
+				189CF166281921DD00BD08DA /* FeedCellTableViewCell.swift */,
 				FE50735F2811BADE00D9F0A0 /* AppDelegate.swift */,
 				FE5073612811BADE00D9F0A0 /* SceneDelegate.swift */,
 				FE5073732811D4BB00D9F0A0 /* MenuViewController.swift */,
@@ -224,6 +227,7 @@
 			files = (
 				FE5073602811BADE00D9F0A0 /* AppDelegate.swift in Sources */,
 				189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */,
+				189CF167281921DE00BD08DA /* FeedCellTableViewCell.swift in Sources */,
 				FE5073762813322000D9F0A0 /* MoodViewController.swift in Sources */,
 				FE5073782813322C00D9F0A0 /* HabitViewController.swift in Sources */,
 				FE5073742811D4BB00D9F0A0 /* MenuViewController.swift in Sources */,
