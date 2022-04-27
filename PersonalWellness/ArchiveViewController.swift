@@ -105,7 +105,7 @@ class ArchiveViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.mood.image = UIImage(named: "happy")
             cell.mood.sizeToFit()
         } else if (mood == -1) {
-            cell.mood.removeFromSuperview()
+            cell.mood.image = UIImage(named: "empty")
         }
         
         let skincare = skincareArray[indexPath.row]
@@ -114,16 +114,24 @@ class ArchiveViewController: UIViewController, UITableViewDelegate, UITableViewD
         let workout = workoutArray[indexPath.row]
         
         if (skincare==false) {
-            cell.skincare.removeFromSuperview()
+            cell.skincare.image = UIImage(named: "empty")
+        } else {
+            cell.skincare.image = UIImage(named: "skincare")
         }
         if (sleep==false) {
-            cell.sleep.removeFromSuperview()
+            cell.sleep.image = UIImage(named: "empty")
+        } else {
+            cell.sleep.image = UIImage(named: "sleep")
         }
         if (water==false) {
-            cell.water.removeFromSuperview()
+            cell.water.image = UIImage(named: "empty")
+        } else {
+            cell.water.image = UIImage(named: "water")
         }
         if (workout==false) {
-            cell.workout.removeFromSuperview()
+            cell.workout.image = UIImage(named: "empty")
+        } else {
+            cell.workout.image = UIImage(named: "workout")
         }
       
         return cell
