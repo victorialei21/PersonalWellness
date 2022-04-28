@@ -38,5 +38,10 @@ class MenuViewController: UIViewController {
         }
     } // prepare
 
+    @IBAction func logout(_ sender: Any) {
+        try? Auth.auth().signOut()
+        performSegue(withIdentifier: "toLogin", sender: nil)
+    }//logout
+    
 } // MenuViewController
 

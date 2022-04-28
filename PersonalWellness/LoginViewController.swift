@@ -29,7 +29,7 @@ class LoginViewController: UIViewController {
                 if error != nil {
                     self.makeAlert(titleSent: "Error!", messageSent: error?.localizedDescription ?? "Error")
                 }else {
-                    self.performSegue(withIdentifier: "toFeedVC", sender: nil)
+                    self.performSegue(withIdentifier: "toMenu", sender: nil)
                 }
             
             }//{(authdata, error) in

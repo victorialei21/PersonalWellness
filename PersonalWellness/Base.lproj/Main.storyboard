@@ -29,7 +29,7 @@
             <objects>
                 <viewController id="u43-KK-Hxf" customClass="LoginViewController" customModule="PersonalWellness" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9ZT-zi-2pm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="floral" translatesAutoresizingMaskIntoConstraints="NO" id="wgG-yL-xvG">
@@ -319,9 +319,8 @@
                                 <rect key="frame" x="-21" y="-97" width="457" height="804"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Today is 04/24/2022" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Today is 04/24/2022" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DDz-yT-QhJ">
                                 <rect key="frame" x="69" y="134" width="276" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="39"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -354,15 +353,32 @@
                                     <segue destination="kQw-5c-Mbl" kind="show" identifier="chooseMoodSegue" id="lPw-mB-Hbk"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nd-xq-O4X">
+                                <rect key="frame" x="309" y="20" width="87" height="31"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="DHW-hy-EcX" eventType="touchUpInside" id="EtV-q6-0JY"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EC1-0h-yo8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0nd-xq-O4X" firstAttribute="leading" secondItem="EC1-0h-yo8" secondAttribute="leading" constant="299" id="QjF-ut-VS8"/>
+                            <constraint firstItem="DDz-yT-QhJ" firstAttribute="top" secondItem="0nd-xq-O4X" secondAttribute="bottom" constant="83" id="ZIq-5V-UUb"/>
+                            <constraint firstItem="EC1-0h-yo8" firstAttribute="trailing" secondItem="0nd-xq-O4X" secondAttribute="trailing" constant="18" id="hme-VT-CVd"/>
+                            <constraint firstItem="0nd-xq-O4X" firstAttribute="top" secondItem="EC1-0h-yo8" secondAttribute="top" constant="20" id="pAo-RZ-BMZ"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Today" selectedImage="person.fill" catalog="system" id="4gW-my-eFv"/>
                     <navigationItem key="navigationItem" id="bnD-81-Up1"/>
                     <connections>
                         <outlet property="dateText" destination="DDz-yT-QhJ" id="8S2-nF-rdl"/>
                         <outlet property="habitPopUp" destination="Od7-wg-Kyc" id="qDt-EV-zyd"/>
+                        <segue destination="u43-KK-Hxf" kind="presentation" identifier="toLogin" id="z8O-FU-JBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n37-z6-XLC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
