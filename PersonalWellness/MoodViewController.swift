@@ -17,6 +17,7 @@ class MoodViewController: UIViewController {
     var buttonClicked = -1
     let db = Firestore.firestore()
     var date = ""
+    var username = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class MoodViewController: UIViewController {
         dateFormatter.dateFormat = " MM.dd.yyyy"
         date = dateFormatter.string(from: Date())
         
-        let dateRef = db.collection("users").document("\(date)")
+        let dateRef = db.collection("\(username)").document("\(date)")
         dateRef.getDocument(completion: { snapshot, error in
             if let err = error {
                 print(err.localizedDescription)
@@ -87,7 +88,7 @@ class MoodViewController: UIViewController {
     }//happyButtonClicked
     
     @IBAction func save(_ sender: UIButton) {
-        db.collection("users").document("\(date)").setData(["mood": buttonClicked ], merge: true ) { err in
+        db.collection("\(username)").document("\(date)").setData(["mood": buttonClicked ], merge: true ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             } else {

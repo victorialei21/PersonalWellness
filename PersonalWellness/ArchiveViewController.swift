@@ -18,6 +18,7 @@ class ArchiveViewController: UIViewController, UITableViewDelegate, UITableViewD
     var waterArray = [Bool]()
     var workoutArray = [Bool]()
     var date = ""
+    var username = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,8 @@ class ArchiveViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func getDataFromFirestore() {
         let fireStoreDatabase = Firestore.firestore()
-        fireStoreDatabase.collection("users").addSnapshotListener {(snapshot, error) in
+        
+        fireStoreDatabase.collection("\(username)").addSnapshotListener {(snapshot, error) in
             if error != nil {
                 print(error?.localizedDescription)
             } else {
@@ -49,7 +51,6 @@ class ArchiveViewController: UIViewController, UITableViewDelegate, UITableViewD
                     for document in snapshot!.documents{
                         let documentId = document.documentID
                         self.documentIdArray.append(documentId)
-                        print(documentId)
                         
                         if let mood = document.get("mood") as? Int {
                             self.moodArray.append(mood)

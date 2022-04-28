@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182D3D40281A317500211CE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182D3D3F281A317500211CE7 /* LoginViewController.swift */; };
 		189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CF15F2819105000BD08DA /* ArchiveViewController.swift */; };
 		189CF167281921DE00BD08DA /* FeedCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189CF166281921DD00BD08DA /* FeedCellTableViewCell.swift */; };
 		E7EFF4D09C7DA19442BD8EA8 /* Pods_PersonalWellness.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3697D0DB182E5F04D46A381 /* Pods_PersonalWellness.framework */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182D3D3F281A317500211CE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		189CF15F2819105000BD08DA /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
 		189CF166281921DD00BD08DA /* FeedCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedCellTableViewCell.swift; path = "/Users/apple/Desktop/COSC-253 APP/PersonalWellness/PersonalWellness/FeedCellTableViewCell.swift"; sourceTree = "<absolute>"; };
 		2636F8842615AD9FCF01898D /* Pods-PersonalWellness.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalWellness.release.xcconfig"; path = "Target Support Files/Pods-PersonalWellness/Pods-PersonalWellness.release.xcconfig"; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 				FE5073752813321F00D9F0A0 /* MoodViewController.swift */,
 				FE5073772813322C00D9F0A0 /* HabitViewController.swift */,
 				FE5073652811BADE00D9F0A0 /* Main.storyboard */,
+				182D3D3F281A317500211CE7 /* LoginViewController.swift */,
 				189CF15F2819105000BD08DA /* ArchiveViewController.swift */,
 				FE5073792815C1A800D9F0A0 /* GoogleService-Info.plist */,
 				FE5073682811BAE000D9F0A0 /* Assets.xcassets */,
@@ -229,6 +232,7 @@
 				189CF1602819105100BD08DA /* ArchiveViewController.swift in Sources */,
 				189CF167281921DE00BD08DA /* FeedCellTableViewCell.swift in Sources */,
 				FE5073762813322000D9F0A0 /* MoodViewController.swift in Sources */,
+				182D3D40281A317500211CE7 /* LoginViewController.swift in Sources */,
 				FE5073782813322C00D9F0A0 /* HabitViewController.swift in Sources */,
 				FE5073742811D4BB00D9F0A0 /* MenuViewController.swift in Sources */,
 				FE5073622811BADE00D9F0A0 /* SceneDelegate.swift in Sources */,

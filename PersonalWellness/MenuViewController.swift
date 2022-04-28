@@ -13,6 +13,7 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var habitPopUp: UIView!
     @IBOutlet weak var dateText: UITextField!
     var todayDate = Date()
+    var username = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,15 +26,17 @@ class MenuViewController: UIViewController {
 
     }//viewDidLoad
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+        if segue.identifier == "chooseHabitSegue" {
+            let controller = segue.destination as! HabitViewController
+            controller.username = self.username
+            
+        }
+        if segue.identifier == "chooseMoodSegue" {
+            let controller = segue.destination as! MoodViewController
+            controller.username = self.username
+        }
+    } // prepare
 
 } // MenuViewController
 

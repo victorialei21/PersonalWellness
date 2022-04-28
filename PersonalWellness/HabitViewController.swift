@@ -20,6 +20,7 @@ class HabitViewController: UIViewController {
     var sleep = false
     var water = false
     var workout = false
+    var username = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +29,7 @@ class HabitViewController: UIViewController {
         dateFormatter.dateFormat = " MM.dd.yyyy"
         date = dateFormatter.string(from: Date())
         
-        let dateRef = db.collection("users").document("\(date)")
+        let dateRef = db.collection("\(username)").document("\(date)")
         dateRef.getDocument(completion: { snapshot, error in
             if let err = error {
                 print(err.localizedDescription)
@@ -110,25 +111,25 @@ class HabitViewController: UIViewController {
     }//workoutButtonClicked
     
     @IBAction func save(_ sender: UIButton) {
-        db.collection("users").document("\(date)").setData(["sleep": sleep], merge: true ) { err in
+        db.collection("\(username)").document("\(date)").setData(["sleep": sleep], merge: true ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             }
         } // db
     
-        db.collection("users").document("\(date)").setData(["water": water], merge: true ) { err in
+        db.collection("\(username)").document("\(date)").setData(["water": water], merge: true ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             }
         } // db
         
-        db.collection("users").document("\(date)").setData(["skincare": skincare], merge: true ) { err in
+        db.collection("\(username)").document("\(date)").setData(["skincare": skincare], merge: true ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             }
         } // db
         
-        db.collection("users").document("\(date)").setData(["workout": workout], merge: true ) { err in
+        db.collection("\(username)").document("\(date)").setData(["workout": workout], merge: true ) { err in
             if let err = err {
                 print("Error writing document: \(err)")
             }
